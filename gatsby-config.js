@@ -6,8 +6,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "MtPLQ6eZrnmx6O_qUvQOtkqx_vo5BkVv8xY-WbM4Qy4",
-        spaceId: "rqyee5s9juuf",
+        accessToken: `${process.env.GATSBY_CONTENTFUL_API_KEY}`,
+        spaceId: `${process.env.GATSBY_CONTENTFUL_SPACE_ID}`,
       },
     },
     "gatsby-plugin-emotion",
